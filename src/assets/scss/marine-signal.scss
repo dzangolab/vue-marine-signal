@@ -1,0 +1,12 @@
+$flag-icon-path: '~@dzangolab/marine-signal-flags/src/flags';
+
+@import '~@dzangolab/marine-signal-flags/src/sass/marine-signal-flags.scss';
+
+.marine-signal {
+  background-color: #eee;
+  padding: 0.25rem;
+
+  .flag-icon {
+    padding: 0 0.5rem 0 0;
+  }
+}

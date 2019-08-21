@@ -1,0 +1,52 @@
+{
+  "name": "@dzangolab/vue-marine-signal",
+  "version": "0.1.0",
+  "description": "A vue.js component to display marine signals.",
+  "keywords": [
+    "vuejs",
+    "marine signal",
+    "flag",
+    "icon"
+  ],
+  "homepage": "https://github.com/dzangolab/vue-marine-signal",
+  "bugs": "https://github.com/dzangolab/vue-marine-signal/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Olivier Pichon",
+    "email": "op@dzango.com",
+    "url": "https://github.com/opichon"
+  },
+  "repository": "github:dzangolab/vue-marine-signal",
+  "scripts": {
+    "build": "vue-cli-service build --target lib --name MarineSignal ./src/components/Signal.vue",
+    "build:wc": "vue-cli-service build --target wc --name marine-signal ./src/components/Signal.vue",
+    "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint"
+  },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "main": "./dist/MarineSignal.common.js",
+  "dependencies": {
+    "@dzangolab/marine-signal-flags": "file:../marine-signal-flags",
+    "core-js": "^3.2.1",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/web-component-wrapper": "^1.2.0",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
